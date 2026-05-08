@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nirmala Women's Care - Expert Gynecology & Infertility Specialist. Dr. Nirmala Yaduvanshi, MBBS, MS (Obs & Gyn). Advanced laparoscopic & hysteroscopy surgery.">
+  <meta name="keywords" content="gynecologist, infertility specialist, laparoscopy, hysteroscopy, pregnancy care, women's health">
+  <title>{% block title %}Nirmala Women's Care | Expert Gynecology & Infertility{% endblock %}</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+  {% include 'core/navbar.html' %}
+
+  {% if messages %}
+  <div style="position:fixed;top:90px;left:50%;transform:translateX(-50%);z-index:1100;width:min(500px,90vw);">
+    {% for message in messages %}
+    <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}success{% endif %} alert-dismissible fade show alert-custom shadow" role="alert">
+      <i class="fas fa-{% if message.tags == 'error' %}exclamation-circle{% else %}check-circle{% endif %} me-2"></i>
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% block content %}{% endblock %}
+
+  {% include 'core/footer.html' %}
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <button class="float-btn float-top" id="backTop" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+      <span class="float-label">Top</span>
+    </button>
+    <a href="tel:+919251272145" class="float-btn float-call" title="Call Us">
+      <i class="fas fa-phone"></i>
+      <span class="float-label">Call</span>
+    </a>
+    <a href="https://wa.me/919251272145" target="_blank" class="float-btn float-wa" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="float-label">WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close"><i class="fas fa-times"></i></button>
+    <img id="lightboxImg" src="" alt="Gallery">
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

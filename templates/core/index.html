@@ -1,0 +1,605 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ================================
+     HERO SECTION
+     ================================ -->
+<section id="hero">
+  <div class="hero-bg-shape hero-bg-shape-1"></div>
+  <div class="hero-bg-shape hero-bg-shape-2"></div>
+
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-6">
+        <div class="hero-eyebrow" data-aos="fade-up">
+          <i class="fas fa-circle-dot" style="font-size:0.5rem;color:#c97b8a;"></i>
+          <span>Certified Infertility Specialist</span>
+          &bull;
+          <span>15+ Years Experience</span>
+        </div>
+
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="80">
+          Advanced <em>Gynecology</em><br>& Infertility Care
+        </h1>
+
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="150">
+          Compassionate women's healthcare with modern treatment, expert surgical care, and a warm, patient-first approach you can trust.
+        </p>
+
+        <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
+          <span class="hero-feature"><i class="fas fa-check-circle"></i> Minimal Pain</span>
+          <span class="hero-feature"><i class="fas fa-check-circle"></i> Faster Recovery</span>
+          <span class="hero-feature"><i class="fas fa-check-circle"></i> Expert Care</span>
+          <span class="hero-feature"><i class="fas fa-check-circle"></i> Safe Procedures</span>
+        </div>
+
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="250">
+          <a href="#appointment" class="btn btn-primary-custom btn-lg">
+            <i class="fas fa-calendar-plus"></i> Book Appointment
+          </a>
+          <a href="#treatments" class="btn btn-outline-custom btn-lg">
+            Explore Treatments <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6">
+        <div class="hero-img-wrap" data-aos="fade-left" data-aos-delay="100">
+
+          <div class="hero-img-card">
+            <div class="hero-img-main">
+               <img src="{% static 'images/doctor_hero.jpg' %}" alt="Dr. Nirmala Yaduvanshi" class="img-fluid">
+               <div class="hero-img-overlay">
+                  <div class="hero-img-info">
+                    <div class="info-name">Dr. Nirmala Yaduvanshi</div>
+                    <div class="info-meta">MBBS, MS (Obstetrics & Gynecology)</div>
+                    <div class="info-specialty">Infertility Specialist · Laparoscopic Surgeon</div>
+                  </div>
+               </div>
+            </div>
+          </div>
+
+          <!-- Floating badge -->
+          <div class="hero-badge">
+            <div class="hero-badge-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="hero-badge-text">
+              <strong>1000+ Successful Cases</strong>
+              Infertility & Surgery
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     COUNTER STRIP
+     ================================ -->
+<div class="counter-section">
+  <div class="container">
+    <div class="row text-center gy-4">
+      <div class="col-6 col-md-3">
+        <div class="counter-item">
+          <span class="counter-num" data-target="5000" data-suffix="+">0+</span>
+          <div class="counter-label">Patients Treated</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="counter-item">
+          <span class="counter-num" data-target="15" data-suffix="+">0+</span>
+          <div class="counter-label">Years Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="counter-item">
+          <span class="counter-num" data-target="1000" data-suffix="+">0+</span>
+          <div class="counter-label">Surgeries Performed</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="counter-item">
+          <span class="counter-num" data-target="98" data-suffix="%">0%</span>
+          <div class="counter-label">Patient Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+     ABOUT SECTION
+     ================================ -->
+<section id="about" class="bg-soft">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <!-- Image -->
+      <div class="col-lg-5">
+        <div class="about-img-wrap" data-aos="fade-right">
+            <img src="{% static 'images/doctor_about.jpg' %}" alt="Dr. Nirmala Yaduvanshi" class="img-fluid">
+          <div class="about-exp-badge">
+            <div class="exp-num">15+</div>
+            <div class="exp-text">Years of<br>Expertise</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-7">
+        <div class="about-content" data-aos="fade-left">
+          <div class="section-label">About the Doctor</div>
+          <h2 class="section-title mb-3">Dr. Nirmala <span>Yaduvanshi</span></h2>
+
+          <div class="about-qualification"><i class="fas fa-graduation-cap"></i> MBBS — Bachelor of Medicine & Surgery</div>
+          <div class="about-qualification"><i class="fas fa-graduation-cap"></i> MS — Obstetrics & Gynecology</div>
+          <div class="about-qualification"><i class="fas fa-certificate"></i> Certified Infertility Specialist</div>
+          <div class="about-qualification"><i class="fas fa-certificate"></i> Expert in Laparoscopic & Hysteroscopy Surgery</div>
+
+          <p class="mt-3" style="color:#4a5568;font-size:0.95rem;line-height:1.85;">
+            With over 15 years of dedicated experience in women's healthcare, Dr. Nirmala Yaduvanshi has transformed the lives of thousands of patients through expert clinical care and advanced minimally invasive surgical techniques. Her practice is founded on compassion, precision, and a deep commitment to personalized patient care.
+          </p>
+
+          <p style="color:#4a5568;font-size:0.95rem;line-height:1.85;">
+            Specializing in infertility management, laparoscopic surgery, and high-risk pregnancy, she combines modern medical advancements with a warm, patient-first approach that puts women at ease during every step of their healthcare journey.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-mini-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="about-mini-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h6>15+ Years</h6>
+                <p>Clinical Experience</p>
+              </div>
+            </div>
+            <div class="about-mini-card" data-aos="zoom-in" data-aos-delay="150">
+              <div class="about-mini-icon"><i class="fas fa-baby"></i></div>
+              <div>
+                <h6>Infertility Expert</h6>
+                <p>Specialized Care</p>
+              </div>
+            </div>
+            <div class="about-mini-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="about-mini-icon"><i class="fas fa-circle-nodes"></i></div>
+              <div>
+                <h6>Advanced Surgery</h6>
+                <p>Laparoscopy & Hysteroscopy</p>
+              </div>
+            </div>
+            <div class="about-mini-card" data-aos="zoom-in" data-aos-delay="250">
+              <div class="about-mini-icon"><i class="fas fa-heart-pulse"></i></div>
+              <div>
+                <h6>Women's Wellness</h6>
+                <p>Holistic Healthcare</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <a href="#appointment" class="btn btn-primary-custom">
+              <i class="fas fa-calendar-check"></i> Schedule Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     TREATMENTS SECTION
+     ================================ -->
+<section id="treatments">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">What We Treat</div>
+      <h2 class="section-title">Our Specialised <span>Treatments</span></h2>
+      <p class="section-subtitle">Comprehensive gynecological care using the latest minimally invasive techniques for faster healing and better outcomes.</p>
+    </div>
+
+    <div class="row g-4">
+      {% for treatment in treatments %}
+      <div class="col-sm-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 | divisibleby:4 }}">
+        <div class="treatment-card">
+          {% if treatment.image %}
+          <div class="treatment-img">
+            <img src="{% static treatment.image %}" alt="{{ treatment.title }}">
+          </div>
+          {% endif %}
+          <div class="treatment-card-content">
+            <div class="treatment-icon">
+              <i class="fas {{ treatment.icon }}"></i>
+            </div>
+            <h5>{{ treatment.title }}</h5>
+            <p>{{ treatment.desc }}</p>
+            <a href="#appointment" class="treatment-link">
+              Book Consultation <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     WHY CHOOSE US
+     ================================ -->
+<section id="why" class="bg-teal">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">Your Health, Our <span>Priority</span></h2>
+      <p class="section-subtitle">We combine medical excellence with compassionate care to deliver an experience you can trust.</p>
+    </div>
+
+    <div class="row g-4">
+      {% for item in why_items %}
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.counter0 }}0">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas {{ item.icon }}"></i></div>
+          <h5>{{ item.title }}</h5>
+          <p>{{ item.desc }}</p>
+        </div>
+      </div>
+      {% empty %}
+      {% for item in why_default %}
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas {{ item.icon }}"></i></div>
+          <h5>{{ item.title }}</h5>
+          <p>{{ item.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     GALLERY SECTION
+     ================================ -->
+<section id="gallery" class="bg-soft">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Our Facility</div>
+      <h2 class="section-title">Clinic <span>Gallery</span></h2>
+      <p class="section-subtitle">A modern, hygienic and welcoming environment designed around patient comfort and safety.</p>
+    </div>
+
+    <div class="gallery-grid" data-aos="fade-up">
+      {% if gallery_images %}
+        {% for img in gallery_images %}
+        <div class="gallery-item">
+          <img src="{{ img.image.url }}" alt="{{ img.title }}" loading="lazy">
+          <div class="gallery-overlay"></div>
+          <div class="gallery-overlay-icon"><i class="fas fa-magnifying-glass-plus"></i></div>
+        </div>
+        {% endfor %}
+      {% else %}
+        {% for i in gallery_placeholders %}
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <i class="fas {{ i.icon }}"></i>
+          </div>
+          <div class="gallery-overlay"></div>
+          <div class="gallery-overlay-icon"><i class="fas fa-magnifying-glass-plus"></i></div>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     TESTIMONIALS
+     ================================ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">What Our <span>Patients</span> Say</h2>
+      <p class="section-subtitle">Real stories of care, healing, and hope from the women we've had the privilege to serve.</p>
+    </div>
+
+    <div class="testimonial-slider-wrap" data-aos="fade-up">
+      <div class="testimonial-track">
+        {% if use_default_testimonials %}
+          {% for t in testimonials %}
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="testimonial-avatar">{{ t.initials }}</div>
+                <div>
+                  <div class="testimonial-name">{{ t.name }}</div>
+                  <div class="testimonial-treatment">{{ t.treatment }}</div>
+                </div>
+                <div class="ms-auto testimonial-stars">
+                  {% for star in "12345" %}<i class="fas fa-star"></i>{% endfor %}
+                </div>
+              </div>
+              <p class="testimonial-text">"{{ t.review }}"</p>
+            </div>
+          </div>
+          {% endfor %}
+        {% else %}
+          {% for t in testimonials %}
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="testimonial-avatar">
+                  {% if t.patient_image %}
+                    <img src="{{ t.patient_image.url }}" alt="{{ t.patient_name }}">
+                  {% else %}
+                    {{ t.patient_name|first }}
+                  {% endif %}
+                </div>
+                <div>
+                  <div class="testimonial-name">{{ t.patient_name }}</div>
+                  <div class="testimonial-treatment">{{ t.treatment }}</div>
+                </div>
+                <div class="ms-auto testimonial-stars">
+                  {% for i in "12345" %}<i class="fas fa-star{% if forloop.counter > t.rating %}-half-alt{% endif %}"></i>{% endfor %}
+                </div>
+              </div>
+              <p class="testimonial-text">"{{ t.review }}"</p>
+            </div>
+          </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn slider-prev" aria-label="Previous">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="slider-dots">
+          {% if use_default_testimonials %}
+            {% for t in testimonials %}
+            <div class="slider-dot {% if forloop.first %}active{% endif %}"></div>
+            {% endfor %}
+          {% else %}
+            {% for t in testimonials %}
+            <div class="slider-dot {% if forloop.first %}active{% endif %}"></div>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <button class="slider-btn slider-next" aria-label="Next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     APPOINTMENT SECTION
+     ================================ -->
+<section id="appointment" class="appt-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Book a Visit</div>
+      <h2 class="section-title">Request an <span>Appointment</span></h2>
+      <p class="section-subtitle">Take the first step towards better health. Our team will confirm your booking within 24 hours.</p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- Form -->
+      <div class="col-lg-7" data-aos="fade-right">
+        <div class="appt-card">
+          <h3 style="font-family:'DM Sans',sans-serif;font-size:1.2rem;font-weight:600;margin-bottom:1.75rem;color:#2d3748;">
+            <i class="fas fa-calendar-check me-2" style="color:#2a6b8a;"></i>Appointment Details
+          </h3>
+          <form method="POST" action="#appointment" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <input type="hidden" name="form_type" value="appointment">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Full Name *</label>
+                {{ appointment_form.full_name }}
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Phone Number *</label>
+                {{ appointment_form.phone }}
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Email Address *</label>
+                {{ appointment_form.email }}
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Preferred Date *</label>
+                {{ appointment_form.appointment_date }}
+              </div>
+              <div class="col-12">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Treatment Type *</label>
+                {{ appointment_form.treatment_type }}
+              </div>
+              <div class="col-12">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Additional Message</label>
+                {{ appointment_form.message }}
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom w-100" style="padding:0.85rem;font-size:0.95rem;">
+                  <i class="fas fa-paper-plane me-2"></i>Submit Appointment Request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="col-lg-5" data-aos="fade-left">
+        <div class="appt-info-card">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.7rem;margin-bottom:0.5rem;">Clinic Hours &<br>Contact Info</h3>
+          <p style="opacity:0.75;font-size:0.88rem;margin-bottom:2rem;">Walk-ins welcome during clinic hours. Emergency consultations available 24/7.</p>
+
+          <div class="appt-info-item">
+            <div class="appt-info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h6>OPD Hours</h6>
+              <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+              <p style="font-size:0.82rem;opacity:0.7;">Sunday: 10:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+
+          <div class="appt-info-item">
+            <div class="appt-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h6>Phone / WhatsApp</h6>
+              <p>+91 9251272145</p>
+            </div>
+          </div>
+
+          <div class="appt-info-item">
+            <div class="appt-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h6>Location</h6>
+              <p>Kanak vihar, plot no.-1 2 3</p>
+            <small>Meena Wala -Sirsi Rd, Meena Wala, Roshan Nagar, Kanakpura, Jaipur, Rajasthan 302041</p>
+            </div>
+          </div>
+
+          <div class="appt-info-item">
+            <div class="appt-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h6>Email</h6>
+              <p>info@nirmalawomenscare.com</p>
+            </div>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:1.25rem;margin-top:1rem;">
+            <div style="font-size:0.8rem;opacity:0.75;margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:0.08em;">Emergency Line</div>
+            <a href="tel:+919251272145" style="color:white;font-size:1.4rem;font-weight:700;text-decoration:none;font-family:'Cormorant Garamond',serif;">+91 9251272145</a>
+            <div style="font-size:0.8rem;opacity:0.65;margin-top:0.25rem;">Available 24 hours, 7 days a week</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     CONTACT SECTION
+     ================================ -->
+<section id="contact" class="bg-soft">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <p class="section-subtitle">Reach out to us through any of the channels below and we'll be happy to assist you.</p>
+    </div>
+
+    <div class="row g-3 mb-5">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <a href="tel:9251272145" class="contact-card">
+          <div class="contact-icon primary"><i class="fas fa-phone"></i></div>
+          <div>
+            <h6>Phone</h6>
+            <p>+91 92512 72145</p>
+            <small>Mon – Sat, 9am–7pm</small>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <a href="https://wa.me/919251272145" target="_blank" class="contact-card">
+          <div class="contact-icon green"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h6>WhatsApp</h6>
+            <p>+91 92512 72145</p>
+            <small>Quick response guaranteed</small>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <a href="mailto:info@nirmalawomenscare.com" class="contact-card">
+          <div class="contact-icon rose"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h6>Email</h6>
+            <p>info@nirmalawomenscare.com</p>
+            <small>Reply within 24 hours</small>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="220">
+        <div class="contact-card">
+          <div class="contact-icon orange"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h6>Address</h6>
+            <p>Kanak vihar, plot no.-1 2 3</p>
+            <small>Meena Wala -Sirsi Rd, Meena Wala, Roshan Nagar, Kanakpura, Jaipur, Rajasthan 302041</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form + Map -->
+    <div class="row g-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="appt-card" style="height:100%;">
+          <h3 style="font-family:'DM Sans',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:1.5rem;color:#2d3748;">
+            <i class="fas fa-message me-2" style="color:#c97b8a;"></i>Send Us a Message
+          </h3>
+          <form method="POST" action="#contact" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <input type="hidden" name="form_type" value="contact">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Your Name *</label>
+                {{ contact_form.name }}
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Phone *</label>
+                {{ contact_form.phone }}
+              </div>
+              <div class="col-12">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Email *</label>
+                {{ contact_form.email }}
+              </div>
+              <div class="col-12">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Subject *</label>
+                {{ contact_form.subject }}
+              </div>
+              <div class="col-12">
+                <label class="form-label" style="font-size:0.85rem;font-weight:500;color:#4a5568;">Message *</label>
+                {{ contact_form.message }}
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-rose w-100" style="padding:0.8rem;">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.3624854613704!2d75.69762017450542!3d26.923720659619132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4cba598e21e7%3A0x2d80120a0dcc385!2sKanak%20Vihar%20Extension%2C%20Sirsi%20Road%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1778190028947!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Clinic Location"></iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
