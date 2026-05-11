@@ -10,10 +10,11 @@ TREATMENTS_DATA = [
     {'icon': 'fa-baby', 'title': 'Infertility Treatment', 'slug': 'infertility', 'desc': 'Comprehensive infertility evaluation and personalised treatment plans for couples.', 'image': 'images/infertility.png'},
     {'icon': 'fa-heart-pulse', 'title': 'Pregnancy Care', 'slug': 'pregnancy', 'desc': 'Complete antenatal and postnatal care for a safe, healthy pregnancy journey.', 'image': 'images/pregnancy.png'},
     {'icon': 'fa-dna', 'title': 'Fibroid Treatment', 'slug': 'fibroid', 'desc': 'Modern, effective treatment options for uterine fibroids with minimal downtime.', 'image': 'images/fibroid.png'},
-    {'icon': 'fa-calendar-days', 'title': 'Menstrual Disorders', 'slug': 'menstrual', 'desc': 'Diagnosis and treatment of irregular, heavy or painful menstrual cycles.', 'image': 'images/menstrual.png'},
-    {'icon': 'fa-shield-heart', 'title': 'High Risk Pregnancy', 'slug': 'high_risk', 'desc': 'Specialised care and continuous monitoring for high-risk pregnancies.', 'image': 'images/high_risk.png'},
+    {'icon': 'fa-calendar-days', 'title': 'Menstrual Disorders', 'slug': 'menstrual', 'desc': 'Diagnosis and treatment of irregular, heavy or painful menstrual cycles.', 'image': 'images/menstrual.jpg'},
+    {'icon': 'fa-shield-heart', 'title': 'High Risk Pregnancy', 'slug': 'high_risk', 'desc': 'Specialised care and continuous monitoring for high-risk pregnancies.', 'image': 'images/high_risk.jpg'},
     {'icon': 'fa-circle-dot', 'title': 'Ovarian Cyst', 'slug': 'ovarian', 'desc': 'Safe and effective management of ovarian cysts using advanced techniques.', 'image': 'images/ovarian.png'},
     {'icon': 'fa-people-group', 'title': 'Family Planning', 'slug': 'family', 'desc': 'Counselling and modern solutions for family planning and contraception.', 'image': 'images/family.png'},
+    {'icon': 'fa-notes-medical', 'title': 'PCOD Treatment', 'slug': 'pcod', 'desc': 'Comprehensive management and personalised lifestyle plans for PCOD/PCOS.', 'image': 'images/pcod.jpg'},
 ]
 
 TESTIMONIALS_DATA = [
@@ -25,7 +26,7 @@ TESTIMONIALS_DATA = [
 ]
 
 WHY_DATA = [
-    {'icon': 'fa-user-doctor', 'title': 'Experienced Specialist', 'desc': '15+ years of dedicated expertise in gynecology, infertility, and advanced laparoscopic surgery.'},
+    {'icon': 'fa-user-doctor', 'title': 'Experienced Specialist', 'desc': '18+ years of dedicated expertise in gynecology, infertility, and advanced laparoscopic surgery.'},
     {'icon': 'fa-microscope', 'title': 'Modern Technology', 'desc': 'State-of-the-art equipment and advanced minimally invasive surgical techniques.'},
     {'icon': 'fa-shield-heart', 'title': 'Safe Procedures', 'desc': 'All procedures follow strict safety protocols for the best patient outcomes.'},
     {'icon': 'fa-hand-holding-heart', 'title': 'Personalised Care', 'desc': 'Every patient receives an individual treatment plan tailored to their unique needs.'},
